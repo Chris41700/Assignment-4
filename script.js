@@ -22,7 +22,8 @@ const username = document.getElementById('name');
 const password = document.getElementById('password');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
-const submission = document.querySelector('.submitted');
+let header = document.querySelector('.header')
+
 let numbers = [9];
 
 form.addEventListener('submit', (e) => {
@@ -36,8 +37,6 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         errorElement.innerText = messages.join(', ');
     }
-})
 
-// form.onclick = function validInformation() {
-//     submission.textContent = "Submission Completed!";
-// }
+    header.textContent = "Submission Completed!";
+})
