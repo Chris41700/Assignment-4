@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Question 3</title>
+    <title>Question 4</title>
 </head>
 <body>
-    <form>
-        <div action="results.html" method="GET">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-        </div>
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
         <div>
             <label for="name">Username</label>
             <input type="text" name="name" id="name" required>
         </div>
         <div>
             <label for="password">Password</label>
-            <input type="password" name="password" required>
+            <input type="password" name="password" id="password"required>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submission">Submit</button>
     </form>
+    <script src=script.js></script>
 </body>
 </html>
